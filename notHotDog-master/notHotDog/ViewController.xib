@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="notHotDog" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="EHL-Y8-ecl" id="xek-TC-lBa"/>
+                <outlet property="resultLabel" destination="dz8-oJ-TQE" id="bs1-tO-pDk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHL-Y8-ecl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hotdog or not" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz8-oJ-TQE">
+                    <rect key="frame" x="0.0" y="178" width="375" height="311"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dz8-oJ-TQE" secondAttribute="trailing" id="1FA-eV-XAa"/>
+                <constraint firstItem="dz8-oJ-TQE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="158" id="Pb6-TO-MRB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dz8-oJ-TQE" secondAttribute="bottom" constant="178" id="dOd-vg-K47"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EHL-Y8-ecl" secondAttribute="bottom" id="iUX-z0-oer"/>
+                <constraint firstItem="EHL-Y8-ecl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sgk-Wu-hBn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EHL-Y8-ecl" secondAttribute="trailing" id="vc2-Dr-bgI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="EHL-Y8-ecl" secondAttribute="top" constant="20" id="wv2-Qb-ONu"/>
+                <constraint firstItem="dz8-oJ-TQE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xp2-FH-4V3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro.png" width="1200" height="800"/>
+    </resources>
+</document>
